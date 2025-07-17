@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 8080;
 
 app.get("/", (req, res) => {
-  res.send("Hello from Node.js on OpenShift!");
+  res.send("Hello World from Node.js app!");
 });
 
 app.listen(port, () => {
-  console.log(`App listening on port ${port}`);
+  console.log(`App running at http://localhost:${port}`);
 });
